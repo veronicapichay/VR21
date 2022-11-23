@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        div {
+            margin: 2em;
+            padding: 4em;
+            background-color: rgb(60, 35, 184);
+            color: rgb(226, 45, 9);
+            outline: solid rgb(224, 163, 236);
+            width: 30%;
+            max-width:  15em;
+            min-width: 10em;
+            outline-offset: 5px;
+            box-sizing: border-box;
+            height: 10em;
+            position: static;
+        }
+
+        div:hover {
+            outline-width: 6pt;
+        }
+
+        body {
+
+            position: fixed;
+            font-size: 20pt;
+            top: 10px;
+            
+            /* display: flex;
+            justify-content: center; */
+        }
+        
+        p {
+            position: absolute;
+            top: 1em;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div><p>Box1</p></div>
+    <div>Box2</div>
+    <div>Box3</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Positioning</title>
+
+    <style>
+        body {
+            width: 0;
+            height: 0;
+        }
+
+        #content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: aqua;
+        }
+
+        /* #box1 {
+            margin: 2em;
+            padding: 5em;
+            background-color: rgb(60, 35, 184);
+            color: rgb(226, 45, 9);
+            outline: solid rgb(224, 163, 236);
+            width: 30%;
+            max-width:  15em;
+            min-width: 10em;
+            outline-offset: 5px;
+            box-sizing: border-box;
+            height: 10em;
+            position: static;
+        } */
+
+        @media (min-width: 1000px) {
+
+            #content {
+
+                width: 50%;
+                height: fit-content;
+                top: unset;
+                bottom: unset;
+                right: unset;
+                left: unset;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="content">
+        <!-- <div id = "box1"> -->
+        <p>Center Text</p>
+        <!-- </div> -->
+
+    </div>
+</body>
+
+</html>
