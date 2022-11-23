@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #modalPage1{
+        
+        height: 100%;
+        width: 100%;
+        position:absolute;
+        top: 0;
+        background-color: rgba(255, 128, 213, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #modalPage1 > #modalContent1 {
+        background-color: white;
+        height:100%;
+        width: 75%;
+        display:flex;
+        align-items: center;
+        position:relative;
+           
+   }
+
+   #close{
+       position: absolute;
+       top: 0;
+       right: 14px;
+       font-size: 50px;
+       transform: rotate(45deg);
+       padding:0%;
+   }
+   div > #modalTxt{
+       width: 80%;
+   }
+
+    #modalContent1 > div {
+       
+       padding-left: 10%;
+   }
+   div > #modalImg{
+    width: 353px;
+    height: 447px;
+   } 
+</style>
+<body>
+    <div ID= "modalPage1" class = "modalFish">
+        
+        <div ID = "modalContent1" class = "modalFishContent">
+            
+            <div ID="close">+</div>   
+
+        <div><img ID= "modalImg" class= "modalFishImg" src="Images/Fish School.jpg"></div>
+        <div><p ID = "modalTxt">The inspiration behind this piece was Fall foliage. Deep red being one of my favorite colors for the fall, 
+            I decided to use this as the background. Being that it's a dark color, it's easy to layer on different 
+            colors that will coordinate well, while adding a pop to it. </p>
+
+            <p ID = "modalTxt">Around this time I had been making a few more "simpler" and "cute" pieces, so I wanted to being myself back
+                to making something a little bit more abstract. Although semi simple in design, from afar, the origami pieces 
+                appear a bit obscure, almost reminiscent of a pile of leaves. Looking closely, we can see that the origami is 
+                in fact fish swimming in all different directions.
+            </p>
+            </div>
+            
+        
+        </div>
+    </div>
+
+</body>
+</html>

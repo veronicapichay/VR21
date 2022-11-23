@@ -8,28 +8,53 @@
 </head>
     <style>
         
-          #target {
+        #target {
             font-style: italic;
             font-weight: normal;
         }
 
         p {
-            font-weight: bold;
+            font-weight: normal;
         }
 
         .urgent {
             color: rgb(133, 7, 7);
+            font-weight: bold;
         }    
 
         div {
             background-color: goldenrod;
         }
-        
+
+        body {
+            margin: 20em;
+        }
+
+        div > p {
+            font-size: larger;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p:first-child {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+            
+
+
     </style>
 <body>
 
     <div>
         <p id = "target">This is inside a p id tag inside a div</p>
+       <a href = "#target"></a> <p>Another p tag inside the div, supposed to be larger in font size</p></a>
     </div>
 
     <p>This is inside a p tag but outside a div</p>
