@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .content-box {
+            box-sizing: content-box;
+            width: 100px;
+            height: 10em;
+            padding: 1rem;
+            border: 3px solid black;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            width: 100px;
+            height: 600px;
+            padding: 1rem;
+            border: 3px solid black;
+        }
+        .border-box:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <img src="https://variety.com/wp-content/uploads/2022/11/snoop.jpg?w=681&h=383&crop=1" width="100%">
+    </div>
+    <div>
+        <img class="border-box" src="https://nationaltoday.com/wp-content/uploads/2022/10/27-Janet-Jackson-640x514.jpg"- width="100%">
+    </div>
+    
+</body>
+</html> 
