@@ -1,4 +1,5 @@
-# CHAPTER 1 
+# CHAPTER 1
+
 <h3>
 <p>
 JavaScript has 3 special values that dont' have like normal numbers.
@@ -9,12 +10,14 @@ JavaScript has 3 special values that dont' have like normal numbers.
     </ul>
 
 You can use single quotes, double quotes, or backticks to mark strings, as long as the quotes at the start and the end of the string match.</br> If two backslashes follow each other, they will collapse together, and only one will be left in the resulting string value. This is how the string “A newline character is written like "\n".”</br> Unary operators are words instead of symbols. One example is the "typeof" operator.
+
 <ol>
     <li>console.log(typeof 4.5) // → number
     <li>console.log(typeof "x") // → string
 </ol>
 
 Automatic type conversion
+
 <ol>
     <li>console.log(8 * null) // → 0
     <li>console.log("5" - 1) // → 4
@@ -28,6 +31,7 @@ Automatic type conversion
 </br>
 
 # CHAPTER 2
+
 <h3>
 <p>
 <h2>Bindings</h2></br>
@@ -39,7 +43,7 @@ We have seen how to produce new values from old values, but this does not change
         <li> // → 100
     </ol>
 
-The previous statement creates a binding called caught and uses it to grab hold of the number that is produced by multiplying 5 by 5.</br> 
+The previous statement creates a binding called caught and uses it to grab hold of the number that is produced by multiplying 5 by 5.</br>
 After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</br>
 
 <h2>The console.log function</h2>
@@ -49,7 +53,7 @@ After a binding has been defined, its name can be used as an expression. The val
     <li>console.log(typeof "x") // → string
 </ol>
 
-The console.log function that writes out its arguments to some text output device. In browsers, the output lands in the JavaScript console. 
+The console.log function that writes out its arguments to some text output device. In browsers, the output lands in the JavaScript console.
 
 <p>
 <h2>Takeaways</h2>
@@ -61,9 +65,10 @@ Putting statements after one another gives you a program that is executed from t
 Bindings can be used to file pieces of data under a name, and they are useful for tracking state in your program. The environment is the set of bindings that are defined. JavaScript systems always put a number of useful standard bindings into your environment.
 
 Functions are special values that encapsulate a piece of program. You can invoke them by writing functionName(argument1, argument2). Such a function call is an expression and may produce a value.</h2>
+
 </p>
 </p>
 </h3>
 </br>
 
-credits https://eloquentjavascript.net/13_browser.html
+credits https://eloquentjavascript.net/

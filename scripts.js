@@ -64,3 +64,14 @@ one = classmate.toUpperCase()
 two = classmate.toLowerCase()
 console.log(one);
 console.log(two);
+
+let phrase = 'Lannisters always pay their debts.';
+
+console.log(phrase.split(' '));  // use a space as a separator
+//Split on an empty string to get an array of single characters.
+
+let cat = 'Moon';
+console.log(cat.split(''));
+
+let today = 'Monday Tuesday Everyday';
+console.log(today.replace("Tuesday", 'Drinking'));
