@@ -1,0 +1,159 @@
+@media (min-width: 320px) {
+    body {
+        background-color: red;
+    }
+
+    .resize {
+        background-color: rgb(121, 67, 220);
+        height: 100px;
+        width: 100px;
+    }
+
+    .sample {
+        background-color: rgb(60, 158, 165);
+        height: 3000px;
+        width: 3000px;
+        
+    }
+}
+
+@media (min-width: 480px) {
+    body {
+        background-color: blue;
+    }
+
+    .resize {
+        background-color: rgb(102, 72, 72);
+        height: 300px;
+        width: 300px;
+    }
+
+    .sample {
+        background-color: rgb(33, 181, 50);
+        height: 500px;
+        width: 500px;
+        
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: purple;
+    }
+
+    .resize {
+        background-color: black;
+        height: 500px;
+        width: 500px;
+    }
+
+    .sample {
+        background-color: rgb(33, 181, 50);
+        height: 1000px;
+        width: 1000px;
+    }
+}
+
+@media (min-width: 801px) {
+    body {
+        background-color: yellow;
+    }
+
+    .resize {
+        background-color: rgb(13, 25, 127);
+        height: 700px;
+        width: 700px;
+    }
+
+    .sample {
+        background-color: rgb(33, 181, 50);
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-color: green;
+    }
+
+    .resize {
+        background-color: rgb(213, 21, 207);
+        height: 900px;
+        width: 900px;
+    }
+
+    .sample {
+        background-color: rgb(186, 197, 43);
+        height: 800px;
+        width: 800px;
+    }
+}
+
+@media (min-width: 1281px) {
+    body {
+        background-color: orange;
+    }
+
+    .resize {
+        background-color: rgb(16, 108, 169);
+        height: 1100px;
+        width: 1100px;
+    }
+
+    .sample {
+        background-color: rgb(170, 68, 13);
+        height: 680px;
+        width: 680px;
+    }
+}
+
+@media (min-width: 1500px) {
+    body {
+        background-color: rgb(129, 139, 12);
+    }
+
+    .resize {
+        background-color: rgb(209, 75, 135);
+        height: 900px;
+        width: 900px;
+        top: 1000px;
+        bottom: 400px;
+        left: 200px;
+    }
+
+    .sample {
+        background-color: rgb(6, 19, 98);
+        height: 700px;
+        width: 700px;
+        top: 100px;
+        bottom: 400px;
+        left: 40px;
+        position: absolute;
+    }
+}
+
+@media (min-width: 2200px) {
+    body {
+        background-color: rgb(123, 222, 233);
+    }
+
+    .resize {
+        background-color: rgb(233, 154, 189);
+        height: 300px;
+        width: 300px;
+    }
+
+    .sample {
+        background-color: rgb(164, 220, 109);
+        height: 300px;
+        width: 300px;
+        margin-top: 100pt;
+    }
+}
+
+.sample p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+    padding-top: 10em;
+}
