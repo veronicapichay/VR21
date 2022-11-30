@@ -1,0 +1,33 @@
+.container {
+    
+    padding-top: 60px;
+}
+
+
+.calculator-container {
+
+    background-color: rgba(23, 20, 20, 0.631);
+    height: 600px ;
+    width: 475px;
+    border-radius: 10px;
+    padding-top: 37.5px;
+    
+}
+
+.calculator-display {
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: lightgreen;
+    margin: 0 auto;
+    padding-left: 270px;
+    padding-top: 20px;
+    justify-content:right;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Odibe Sans';
+    
+
+    
+
+}
