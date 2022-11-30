@@ -53,3 +53,14 @@ console.log(typeof num.toString() );
 
 console.log(typeof object1.property1)
 
+let funFact = 'Philippines has 7777 islands';
+funFact.includes('Philippines'); // true
+funFact.includes('country'); // false
+console.log(funFact.includes('country'))
+console.log(funFact.includes('Philippines'))
+
+let classmate = "Aeron";
+one = classmate.toUpperCase()
+two = classmate.toLowerCase()
+console.log(one);
+console.log(two);
