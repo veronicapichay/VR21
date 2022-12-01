@@ -75,3 +75,15 @@ console.log(cat.split(''));
 
 let today = 'Monday Tuesday Everyday';
 console.log(today.replace("Tuesday", 'Drinking'));
+
+
+const writeName = name => {
+  const newName = `${name} VR21`;
+  const updateName = `${newName} 2022`;
+
+  console.log(`My name is ${updateName}`);
+};
+
+writeName("Veronica");
+writeName("Sugey");
+writeName("Joe");
