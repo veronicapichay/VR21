@@ -6,5 +6,5 @@ let programming = {
     jokes: "https://bit.ly/2ysFran"
   };
 
-  programming.languages.push("Go");
-  console.log(programming);
+  console.log.programming.languages.push("Go");
+  console.log(programming.languages);
