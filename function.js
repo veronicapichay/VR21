@@ -73,3 +73,33 @@ const product = (a,b) => {
       }
       return true;
     }
+
+//mapper function
+    let arr = [2,5,7,8]
+    function mapper (arr, callback) {
+        
+      for (let i = 0; i < arr.length; i++ ) {
+        newArr.push(callback(arr[i]));
+      }
+      return newArr;
+    }
+
+//filter method 
+const newArr = [4,1,9,6,0,3,5,7,8,2];
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+function filter (arr, callback) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++ ) {
+    callback(arr[i])
+    if (callback(arr[i])) {
+      newArr.push(arr[i]);
+    }
+} 
+return newArr;
+}   
+
+console.log(filter(newArr, isEven));

@@ -14,3 +14,15 @@ function actionCreator(animalName, actionFn) {
 console.log(actionCreator("frog, jump"));
 console.log(actionCreator("dog, walk"));
 console.log(actionCreator("cat, sit"));
+
+
+
+function writeName(name) {
+    console.log(`My name is ${name}`);
+}
+
+function printName (callback, name) {
+    callback(name);
+}
+
+printName(writeName, "Donte");
