@@ -9,17 +9,13 @@
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-      
-        <!-- <style>
-          .col-md-3 {
-            border: solid 1px black;
-          }
-        </style> -->      
+          <link rel="stylesheet" href="bootstrapstyle.css">  
+          <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kenia&family=Nixie+One&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
       </head>
       <body>
         <div class="container">
           <header>
-            <nav class="navbar bg-light">
+            <nav class="navbar">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                   <img src="logo.gif" alt="Logo"
@@ -28,6 +24,7 @@
                 
                 <!-- Button trigger modal -->
                 <button
+                  class="btn btn-dark"
                   type="button"
                   id="add-button"
                   class="btn btn-primary"
@@ -113,7 +110,48 @@
           </header>
           <main>      
             <div class="row">
-              
+              <div class="col-md-3">
+                <div class="card">
+                  <img src = "https://www.yankodesign.com/images/design_news/2022/12/these_headphones_lets_you_feel_the_music_layout.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Eargasmic Buds</h5>
+                    <p class="card-text">
+                      The headphones come with a patented hybrid-driver architecture,
+                      featuring a pair of full-range drivers for the mids and highs to 
+                      mimic loudspeakers and a proprietary impulse driver that emulates 
+                      a sub-woofer system by converting audio signals into corresponding 
+                      mechanical motions that are then directed to your body. Using a
+                      method not too different from bone conduction, this headphone relies 
+                      on audio waves and actual vibrations to help you both hear as well as 
+                      feel the music you listen to. 
+                    </p>
+                    <div>
+                      <button
+                        class="btn btn-dark"
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#updateModal"
+                      >
+                        Update
+                      </button>
+                      <button
+                       class="btn btn-dark"
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </main>
         </div> 
         <!-- Bootstrap JavaScript Libraries -->
@@ -270,13 +308,13 @@
     // document.querySelector(".row").innerHTML = contentCard;
 
     //Creating an element
-    const cardColumn = document.createElement("div");
-    cardColumn.setAttribute("class", "col-md-3");
-    cardColumn.innerText = "#1 Card from JS";
+    // const cardColumn = document.createElement("div");
+    // cardColumn.setAttribute("class", "col-md-3");
+    // cardColumn.innerText = "#1 Card from JS";
 
-    //Append an element
-    const row = document.querySelector(".row");
-    row.append(cardColumn);
+    // //Append an element
+    // const row = document.querySelector(".row");
+    // row.append(cardColumn);
 
 
     </script>
