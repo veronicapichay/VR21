@@ -27,7 +27,7 @@ function handleAddSubmit(event) {
     closeBtn.click();
 }
 
-//create new meme card
+//meme card html template
 function createMemeCard (cardInfo) {
     const colCard = document.createElement("div");
     colCard.classList.add("col");
@@ -41,11 +41,18 @@ function createMemeCard (cardInfo) {
     </div>
   </div>
 </div>`;
-//populating car using cardInfo; selecting img element inside col and setting attributes
-colCard.querySelector(".card-image-top")
+
+//populating card using cardInfo; selecting img element inside col and setting attributes
+colCard.querySelector(".card-img-top")
     .setAttribute("src", cardInfo.memeUrl); 
     
-colCard.querySelector(".card-image-top")
+colCard.querySelector(".card-img-top")
     .setAttribute("alt", cardInfo.top);
 
+colCard.querySelector(".card-title").textContent = cardInfo.top;
+colCard.querySelector(".card-text").textContent = cardInfo.bottom; 
+
+//displaying meme card 
+const cardContainer = document.getElementById("cardContainer")
+cardContainer.append(colCard);
 }
