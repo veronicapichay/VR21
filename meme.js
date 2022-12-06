@@ -52,7 +52,19 @@ colCard.querySelector(".card-img-top")
 colCard.querySelector(".card-title").textContent = cardInfo.top;
 colCard.querySelector(".card-text").textContent = cardInfo.bottom; 
 
+//delete btn 
+const deleteBtn = colCard.querySelector(".btn-danger");
+deleteBtn.addEventListener("click", deleteCard);
+
 //displaying meme card 
 const cardContainer = document.getElementById("cardContainer")
 cardContainer.append(colCard);
 }
+
+function deleteCard(event) {
+    const buttonDelete = event.target;
+    const colCard = buttonDelete.closest(".col"); 
+    console.log(colCard);
+    colCard.remove();
+  }
+
