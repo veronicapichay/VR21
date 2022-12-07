@@ -70,5 +70,36 @@ document
   // });
 
 
-              
-                     
+//meme card html template
+function createCard (cardInfo) {
+    const colCard = document.createElement("div");
+    colCard.classList.add("col");
+    colCard.innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">S</p>
+      <button type = "button" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>`;
+            
+//populating card using cardInfo; selecting img element inside col and setting attributes
+colCard.querySelector(".card-img-top")
+.setAttribute("src", cardInfo.memeUrl); 
+
+colCard.querySelector(".card-img-top")
+.setAttribute("alt", cardInfo.top);
+
+colCard.querySelector(".card-title").textContent = cardInfo.top;
+colCard.querySelector(".card-text").textContent = cardInfo.bottom; 
+
+//delete btn 
+const deleteBtn = colCard.querySelector(".btn-danger");
+deleteBtn.addEventListener("click", deleteCard);
+
+//displaying meme card 
+const cardContainer = document.getElementById("cardContainer")
+cardContainer.append(colCard);
+}             
