@@ -14,7 +14,7 @@ body {
 #start {
   height: 90vh;
   font-family: 'Bungee', cursive;
-  color: #ce29f7;
+  color: #1d559a;
   position: relative;
 }
 
@@ -27,7 +27,7 @@ body {
   transform: rotateX( 45deg );
   line-height: 0.75;
   text-align: center;
-  color: #610079;
+  color: #36cec4;
 }
 
 #start.playing {
@@ -90,7 +90,7 @@ body {
 }
 
 .front {
-  background: linear-gradient(315deg, #ce29f7, white);
+  background: linear-gradient(315deg, #030f6d, white);
   font-size: 3rem;
 }
 
@@ -109,7 +109,7 @@ body {
   align-items: center;
   font-size: 4rem;
   font-family: 'Bungee', cursive;
-  color: #ce29f7;
+  color: #afee4f;
   position: absolute;
   top: 0;
   right: 0;
