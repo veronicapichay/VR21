@@ -11,12 +11,12 @@ function handleAddSubmit(event) {
     console.log("Success! Form submitted."); //debugging purposes
 
     //accessing values in ea elements using name properties
-    const memeUrl = addForm.elements.memeUrl.value;
+    const memeUrl = addForm.elements.imageUrl.value;
     const top = addForm.elements.top.value;
     const bottom = addForm.elements.bottom.value;
     //console.log(memeUrl, top, bottom);
 
-    const cardInfo = {memeUrl, top, bottom};
+    const cardInfo = {imageUrl, top, bottom};
     //call fx passing an obj cardInfo to avoid returning wrong data 
     createMemeCard(cardInfo);
 
@@ -29,14 +29,15 @@ function handleAddSubmit(event) {
 
 //meme card html template
 function createMemeCard (cardInfo) {
-    const colCard = document.createElement("div");
-    colCard.classList.add("col");
+    // const colCard = document.createElement("div");
+    // colCard.classList.add("col");
     colCard.innerHTML = `
     <div class="card" style="width: 18rem;">
     <img class="card-img-top" >
     <div class="card-body">
       <h5 class="card-title"></h5>
       <p class="card-text">S</p>
+      <button type = "button" class="btn btn-info">Update</button>
       <button type = "button" class="btn btn-danger">Delete</button>
     </div>
   </div>
@@ -67,3 +68,39 @@ function deleteCard(event) {
     console.log(colCard);
     colCard.remove();
   }
+
+  function updateCard(event) {
+    const colCard = document.createElement("div");
+    colCard.classList.add("col");
+    colCard.innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">S</p>
+      <button type = "button" class="btn btn-info">Update</button>
+      <button type = "button" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>`;
+
+//populating card using cardInfo; selecting img element inside col and setting attributes
+colCard.querySelector(".card-img-top")
+    .setAttribute("src", cardInfo.memeUrl); 
+    
+colCard.querySelector(".card-img-top")
+    .setAttribute("alt", cardInfo.top);
+
+colCard.querySelector(".card-title").textContent = cardInfo.top;
+colCard.querySelector(".card-text").textContent = cardInfo.bottom; 
+
+//delete btn 
+const UpdateBtn = colCard.querySelector(".btn-info");
+deleteBtn.addEventListener("click", deleteCard);
+
+//displaying meme card 
+const cardContainer = document.getElementById("cardContainer")
+cardContainer.append(colCard);
+}
+  
+
