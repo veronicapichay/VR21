@@ -9,68 +9,73 @@
 </head>
 <body>
     <nav class="navbar">
+      <form class="container-fluid justify-content-center"></form>
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="logo.gif" height="300px"></a>
-          <form class="d-flex">
-<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addmeme">
-    Add New Design
+          <a class="navbar-brand" href="#">
+            <img src="logo.gif" alt="Logo"
+          width="300" height="300" class="d-inline-block align-text-top"> </a>
+<button type="button" class="btn btn-dark" id="updatecard" data-bs-toggle="modal" data-bs-target="#addcard">
+    ADD NEW DESIGN
   </button>
   </form>
  </div>
 </nav>
-  <!-- Modal -->
-  <div class="modal fade" id="addmeme" tabindex="-1" aria-labelledby="addmemeLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="addmemeLabel">Enter Caption</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label for="imageUrl" class="form-label">Image Link</label>
-                  <input
-                    class="form-control"
-                    id="imageUrl"
-                    type="url"
-                    name="Url"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="top" class="form-label">Title</label>
-                  <input
-                    class="form-control"
-                    id="top"
-                    type="text"
-                    id="top"
-                    name="top"
-                    required
-                  />
-                </div>
+  
 
-                <div class="mb-3">
-                  <label for="description" class="form-label"
-                    >Description</label
-                  >
-                  <input
-                    class="form-control"
-                    id="bottom"
-                    type="text"
-                    name="bottom"
-                    required
-                  />
-                </div>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="sub" class="btn btn-dark">
-                    Save
-                </button>
-              </form>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="addcard" tabindex="-1" aria-labelledby="addcardLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="addcardLabel">Enter Design Caption</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form id = "addForm">
+              <div class="mb-3">
+                <label for="prodUrl" class="form-label">Product Url</label>
+                <input
+                  class="form-control"
+                  id="prodUrl"
+                  type="prodUrl"
+                  name="prodUrl"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="top" class="form-label">Title</label>
+                <input
+                  class="form-control"
+                  id="top"
+                  type="text"
+                  id="top"
+                  name="top"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="description" class="form-label"
+                  >Description</label
+                >
+                <input
+                  class="form-control"
+                  id="bottom"
+                  type="text"
+                  name="bottom"
+                  required
+                />
+              </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="sub" class="btn btn-dark">
+                  Save
+              </button>
+            </form>
       </div>
     </div>
   </div>
+</div>
+
   <div class = "container">
     <div id= "cardContainer" class = "row">            
     </div>
