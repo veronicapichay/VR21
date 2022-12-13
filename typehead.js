@@ -14,6 +14,7 @@ const arrayOfObjects = [
 ];
 //global variables
 const SUGGESTIONS = "suggestions";
+const MAX_RESULT = 5;
 
 //serach input event listener
 const inputSearch = document.getElementById("search");
@@ -31,7 +32,7 @@ function fxUp(event) {
     //words users type so far
     const suggestions = arrayOfObjects.filter((result) =>
       result.name.toLowerCase().startsWith(userInput)
-    );
+    ).slice(0,MAX_RESULT); //shows 5 top suggestion
     displaySuggestion(suggestions);
   }
 }
