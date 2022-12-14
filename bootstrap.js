@@ -26,6 +26,16 @@ function handleAddSubmit(event) {
     card.querySelector(".card-text").textContent = cardInfo.bottom;
     } 
     else {
+
+    //data in local storage
+    const currentItems = JSON.parse(localStorage.getItem("items")) || [];
+    const newItem = {top, prodUrl, bottom};
+    const newItems = [...currentItems, newItem];
+    debugger;
+
+    //set new set of items in local storage
+    localStorage.setItem("items", JSON.stringify(newItems));
+
     //add new card
     createCard(cardInfo);
     }
@@ -36,6 +46,7 @@ function handleAddSubmit(event) {
   const closeBtn = document.querySelector('[data-bs-dismiss="modal"]'); //selects Close btn after form submit
   closeBtn.click();
 }
+
 
 //fx to reset the form and clear the id when add button is click after update
 function handleNewButton(event) {
@@ -103,3 +114,4 @@ function updateCard(event) {
   addForm.elements.bottom.value = text;
   addForm.setAttribute("data-cardid", cardID);
 }
+
