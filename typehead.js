@@ -1,17 +1,19 @@
 const arrayOfObjects = [
-  { name: "Fox", link: "foxnews.com" },
-  { name: "Fandango", link: "fandango.com" },
-  { name: "CNN", link: "cnn.com" },
-  { name: "Google", link: "google.com" },
-  { name: "YouTube", link: "youtube.com" },
-  { name: "Instagram", link: "instagram.com" },
-  { name: "Amazon", link: "amazon.com" },
-  { name: "RideFox", link: "ridefox.com" },
-  { name: "Udemy", link: "udemy.com" },
-  { name: "Telegram", link: "telegram.org" },
-  { name: "Discord", link: "discord.com" },
-  { name: "Slack", link: "slack.com" },
+  { name: "Fox", link: "https://foxnews.com" },
+  { name: "Fandango", link: "https://fandango.com" },
+  { name: "CNN", link: "https://cnn.com" },
+  { name: "Google", link: "https://google.com" },
+  { name: "YouTube", link: "https://youtube.com" },
+  { name: "Instagram", link: "https://instagram.com" },
+  { name: "Amazon", link: "https://amazon.com" },
+  { name: "RideFox", link: "https://ridefox.com" },
+  { name: "Udemy", link: "https://udemy.com" },
+  { name: "Telegram", link: "https://telegram.org" },
+  { name: "Discord", link: "https://discord.com" },
+  { name: "Slack", link: "https://slack.com" },
+
 ];
+
 //global variables
 const SUGGESTIONS = "suggestions";
 const MAX_RESULT = 5;
@@ -45,7 +47,7 @@ function displaySuggestion(suggestions) {
     //new suggestions
     suggestions.forEach((result) => {
       const li = document.createElement("li");
-      li.innerHTML = `<a href=" =${result.link}">${result.name}</a>`;
+      li.innerHTML = `<a href="${result.link}">${result.value}</a>`;
       ul.append(li);
     });
   }
