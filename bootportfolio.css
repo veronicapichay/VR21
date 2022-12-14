@@ -1,0 +1,14 @@
+:root {
+  scroll-behavior: smooth;
+}
+.home-img {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .home-img {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
